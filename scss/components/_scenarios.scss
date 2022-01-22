@@ -1,0 +1,92 @@
+.scenarios {
+    background-color: $primary-clr;
+    color: $white-clr;
+    border-radius: 25px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $margin-bottom;
+	text-align: center;
+
+    @media screen and (max-width: 980px) {  
+        height: auto;
+        padding: 50px 30px;
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 768px) { 
+		margin-bottom: 15px;
+        border-radius: 15px;
+	}
+
+	&__list {
+		display: flex;
+        justify-content: center;
+        max-width: 1170px;
+        gap: 30px;
+
+        @media screen and (max-width: 1174px) {
+            max-width: 100%;
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 980px) {  
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .scenario {
+            width: 370px;
+
+            @media screen and (max-width: 1280px) {
+                width: 27%;
+            }
+
+            @media screen and (max-width: 980px) {
+                width: 65%;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 85%;
+            }
+
+            img {
+                margin-bottom: 25px;
+
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            h3 {
+                font-size: 30px;
+                margin-bottom: 10px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 20px;
+                    line-height: 1;
+                    margin-bottom: 5px;
+                }
+            }
+
+            p {
+                color: rgba($color: $white-clr, $alpha: 0.65);
+                line-height: 140%;
+                font-size: 18px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+        }
+	}
+
+    h2 {
+        max-width: 870px;
+        margin-bottom: 50px;
+        line-height: 1;
+    }
+}

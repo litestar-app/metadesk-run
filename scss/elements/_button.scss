@@ -1,0 +1,42 @@
+.btn {
+	padding: 20px 40px;
+	width: 220px;
+	height: 65px;
+	line-height: 1.25;
+	border-radius: 55px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	font-family: $font-family;
+
+	@media screen and (max-width: 768px) {  
+		padding: 15px 22px;
+		height: 50px;
+		width: auto;
+		font-size: 14px;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&-dark {
+		background-color: $primary-clr;
+		color: $white-clr;
+
+		&:hover {
+			background-color: $btn-dark-hover;
+		}
+	}
+
+	&-light {
+		background-color: $secondary-clr;
+		color: $primary-clr;
+
+		&:hover {
+			background-color: $btn-light-hover;
+		}
+	}
+}

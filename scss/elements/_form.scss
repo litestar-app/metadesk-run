@@ -1,0 +1,38 @@
+input[type="text"],
+input[type="email"] {
+    border-radius: 55px;
+    border: 2px solid rgba($color: $primary-clr, $alpha: 0.15);
+    box-sizing: border-box;
+    height: 65px;
+    width: 410px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: $font-family;
+    outline: none;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    &:focus,
+    &:focus-visible {
+        border: 2px solid $primary-clr;
+        box-shadow: none;
+    }
+
+    &::-webkit-input-placeholder {
+        color: rgba($color: $primary-clr, $alpha: 0.35);
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: rgba($color: $primary-clr, $alpha: 0.35);
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: rgba($color: $primary-clr, $alpha: 0.35);
+    }
+      
+}

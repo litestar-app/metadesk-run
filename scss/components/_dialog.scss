@@ -1,0 +1,132 @@
+#dialog {
+    text-align: center;
+
+    h2, button {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) { 
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.ui-widget-overlay {
+    background: #000 !important;
+    opacity: 0.8 !important;
+}
+
+.ui-dialog-titlebar {
+	display: none;
+}
+
+.ui-widget.ui-widget-content {
+    border-radius: 25px;
+    border: 0 !important;
+    padding: 60px 0;
+
+    @media screen and (max-width: 768px) {
+        width: 90% !important;
+    }
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: $margin-bottom;
+        font-weight: 500;
+
+        @media screen and (max-width: 1379px) {
+            font-size: 48px;
+        }
+
+        @media screen and (max-width: 1174px) {
+            font-size: 37px;
+        }
+
+        @media screen and (max-width: 980px) {
+            line-height: 1;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+#messageForm {
+    .form-row {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+
+        input {
+            font-family: $font-family;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        &.error {
+            border: 2px solid $error-clr;
+
+            &:focus,
+            &:focus-visible {
+                border: 2px solid $error-clr;
+            }
+        }
+    }
+
+    label {
+        &.error {
+            display: block;
+            color: $error-clr;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+}
+
+.form-row {
+    margin-bottom: 30px;
+
+    .ui-widget {
+        input {
+            font-family: $font-family;
+        }
+    }
+}
+
+
+
+.thanks-message {
+    display: none;
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+    }
+
+    .btn-dark {
+        color: #fff;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 30px;
+        color: rgba($color: $primary-clr, $alpha: 0.65);
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
+    }
+}

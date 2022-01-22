@@ -1,0 +1,46 @@
+.cta {
+    background-color: $secondary-clr;
+    color: $primary-clr;
+    border-radius: 25px;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $margin-bottom;
+
+    @media screen and (max-width: 980px) {  
+        height: 500px;
+        padding: 50px 30px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) { 
+		margin-bottom: 15px;
+        border-radius: 15px;
+	}
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: $margin-bottom;
+        font-weight: 500;
+
+        @media screen and (max-width: 1379px) {  
+            font-size: 48px;
+        }
+    
+        @media screen and (max-width: 1174px) {  
+            font-size: 37px;
+        }
+
+        @media screen and (max-width: 980px) {  
+            line-height: 1;
+        }
+
+        @media screen and (max-width: 768px) {  
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+}

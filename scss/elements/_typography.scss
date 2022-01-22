@@ -1,0 +1,214 @@
+$header-font-family: $font-family !default;
+$header-font-weight: $weight-normal !default;
+$base-font-size: 100% !default;
+$header-margin-bottom: 0.5rem !default;
+$small-font-size: 80% !default;
+
+$paragraph-margin-bottom: 40px !default;
+
+h1 {
+    font-size: 55px;
+    font-family: $font-family;
+    font-weight: 700;
+
+    @media screen and (max-width: 1174px) {  
+        font-size: 37px;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    font-family: $font-family;
+    font-weight: 700;
+    letter-spacing: -0.04rem;
+
+    @media screen and (max-width: 1379px) {  
+        font-size: 48px;
+    }
+
+    @media screen and (max-width: 1174px) {  
+        font-size: 37px;
+    }
+
+    @media screen and (max-width: 768px) {  
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 140%;
+    font-family: $font-family;
+    font-weight: 700;
+
+    @media screen and (max-width: 992px) {  
+        font-size: 18px;
+    }
+}
+
+p {
+    font-size: 24px;
+    line-height: $lineheight;
+    font-family: $font-family;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {  
+        font-size: 16px;
+    }
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {   
+    line-height: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: $font-color;
+    word-break: break-all;
+    word-break: break-word;
+    display: inline-block;
+    
+    &:visited {
+        border-bottom: 1px solid;
+    }
+    &:hover {   
+        border-bottom: none;
+    }
+    &:active {   
+        color: $font-color;      
+    }
+    &:focus {   
+        border: none; 
+    }
+}
+
+hr {
+    clear: both;
+    max-width: $global-width;
+    height: 0;
+    margin: rem-calc(20) auto;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid $primary-clr;
+    border-left: 0;
+}
+
+strong, b  {   
+    font-weight: bold;  
+}
+em, i {   
+    font-style: italic; 
+}
+small {
+    font-size: $small-font-size;
+    line-height: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: $lineheight;
+    text-rendering: optimizeLegibility;
+    word-break: break-word;
+    small {
+        line-height: 0;
+    }
+}
+
+blockquote {
+    font-style: italic; 
+    margin: 0 0 $paragraph-margin-bottom;
+    padding: rem-calc(20 40 20 40);
+    font-family: $font-family;
+    &, p {
+        line-height: $lineheight;
+    }
+}
+cite {
+    &:before {
+        content: '—';
+    }
+}
+  // Lists
+ul, ol, dl {
+    margin-bottom: $paragraph-margin-bottom;
+    list-style-position: outside;
+    line-height: $lineheight;
+}
+
+li {
+    font-size: inherit;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    margin-left: 1.25rem;
+    list-style-type: disc;
+}
+
+ol {
+    margin-left: 1.25rem;
+}
+
+ul, ol {
+    & & {
+        margin: 1rem 0 1rem 1.5rem;
+        font-size: 90%;
+    }
+}
+
+dl {
+    margin-bottom:  1rem;
+    dt {
+      margin-bottom: 0.2rem;
+      font-weight: 600;
+    }
+    dd {
+        margin-bottom: 0.8rem;
+    }
+}
+
+abbr, abbr[title] {
+    border-bottom: 1px dashed;
+    cursor: help;
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+pre {
+    margin-bottom: 2.5rem;
+    font-size: 1rem; 
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+    > code {
+        display: block;
+        padding: 1rem 1.5rem;
+        white-space: pre;
+    }
+}
+code {
+    padding: rem-calc(2 5 1);
+    border: none;
+    border: 1px solid $primary-clr;
+    border-radius: 4px;
+    font-size: 1rem; 
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: $paragraph-margin-bottom;
+}
+tr {
+    border-bottom: 1px solid $primary-clr;
+}
+th, td {
+    text-align: left;
+    padding: rem-calc(10px);
+}
